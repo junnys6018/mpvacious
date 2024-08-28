@@ -287,6 +287,9 @@ local function construct_note_fields(sub_text, secondary_text, snapshot_filename
     if config.miscinfo_enable == true then
         ret[config.miscinfo_field] = substitute_fmt(config.miscinfo_format)
     end
+    -- <jun>
+    ret["Is Vocabulary Card"] = "x"
+    -- </jun>
     return ret
 end
 
